@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6b5b95, #feb236);
+  color: white;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-box {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
