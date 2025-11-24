@@ -33,17 +33,64 @@ button {
 }
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.skill-box {
-  background-color: #f0f0f0;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
+.skill-category {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.skill-bar {
+  background: #e9ecef;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  background: linear-gradient(135deg, #6b5b95, #feb236);
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #333;
+  font-weight: 700;
+}
+
+#skills {
+  padding: 80px 20px;
+  background: #fff;
 }
 
 .projects-container {
